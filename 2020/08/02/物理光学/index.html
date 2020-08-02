@@ -1,0 +1,1738 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="物理光学, MyBlog">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>物理光学 | MyBlog</title>
+    <link rel="icon" type="image/jpeg" href="/medias/avatar.jpg">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.0.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/%E6%B5%B7%E6%B4%8B%E5%8A%A8%E7%89%A9.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">MyBlog</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于我</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>交流</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/%E6%B5%B7%E6%B4%8B%E5%8A%A8%E7%89%A9.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">MyBlog</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于我
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			交流
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/lxjnote" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/lxjnote" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200802231353471.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">物理光学</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E8%AF%BE%E5%86%85/">
+                                <span class="chip bg-color">课内</span>
+                            </a>
+                        
+                            <a href="/tags/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/">
+                                <span class="chip bg-color">物理光学</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%85%89%E7%94%B5%E8%AF%BE%E7%A8%8B/" class="post-category">
+                                光电课程
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-08-02
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    5.1k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    19 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="物理光学"><a href="#物理光学" class="headerlink" title="物理光学"></a>物理光学</h1><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200802231353471.png" alt="image-20200802231353471"></p>
+<h2 id="考核方式"><a href="#考核方式" class="headerlink" title="考核方式"></a>考核方式</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530180918599.png" alt="image-20200530180918599"></p>
+<h2 id="课程内容"><a href="#课程内容" class="headerlink" title="课程内容"></a>课程内容</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530180949695.png" alt="image-20200530180949695"></p>
+<h2 id="光在原子尺度上的表现"><a href="#光在原子尺度上的表现" class="headerlink" title="光在原子尺度上的表现"></a>光在原子尺度上的表现</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530181042965.png" alt="image-20200530181042965"></p>
+<h2 id="光学的内容"><a href="#光学的内容" class="headerlink" title="光学的内容"></a>光学的内容</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530181111226.png" alt="image-20200530181111226"></p>
+<hr>
+<h1 id="1、光的波动模型01"><a href="#1、光的波动模型01" class="headerlink" title="1、光的波动模型01"></a>1、光的波动模型01</h1><p><strong>（本周包含三部分）</strong></p>
+<h2 id="1-1、光波长的范围"><a href="#1-1、光波长的范围" class="headerlink" title="1.1、光波长的范围"></a>1.1、光波长的范围</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530175348485.png" alt="image-20200530175348485"></p>
+<h2 id="1-2、光波的产生"><a href="#1-2、光波的产生" class="headerlink" title="1.2、光波的产生"></a>1.2、光波的产生</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530175424799.png" alt="image-20200530175424799"></p>
+<hr>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530175524893.png" alt="image-20200530175524893"></p>
+<h2 id="1-3、光波的空间和时间周期性"><a href="#1-3、光波的空间和时间周期性" class="headerlink" title="1.3、光波的空间和时间周期性"></a>1.3、光波的空间和时间周期性</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530175606690.png" alt="image-20200530175606690"></p>
+<hr>
+<h2 id="1-4、光通量与光强"><a href="#1-4、光通量与光强" class="headerlink" title="1.4、光通量与光强"></a>1.4、光通量与光强</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530175627836.png" alt="image-20200530175627836"></p>
+<h3 id="介质折射率"><a href="#介质折射率" class="headerlink" title="介质折射率"></a>介质折射率</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530175702200.png" alt="image-20200530175702200"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530175811693.png" alt="image-20200530175811693"></p>
+<h2 id="1-5、能流密度"><a href="#1-5、能流密度" class="headerlink" title="1.5、能流密度"></a>1.5、能流密度</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530175745241.png" alt="image-20200530175745241"></p>
+<h2 id="1-6、光的传播"><a href="#1-6、光的传播" class="headerlink" title="1.6、光的传播"></a>1.6、光的传播</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530180031922.png" alt="image-20200530180031922"></p>
+<hr>
+<h2 id="1-7、简谐（定态）光波及其描述"><a href="#1-7、简谐（定态）光波及其描述" class="headerlink" title="1.7、简谐（定态）光波及其描述"></a>1.7、简谐（定态）光波及其描述</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530180517326.png" alt="image-20200530180517326"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530180605036.png" alt="image-20200530180605036"></p>
+<hr>
+<h1 id="2、光的波动模型02"><a href="#2、光的波动模型02" class="headerlink" title="2、光的波动模型02"></a>2、光的波动模型02</h1><h2 id="2-1、定态光波按波面分类"><a href="#2-1、定态光波按波面分类" class="headerlink" title="2.1、定态光波按波面分类"></a>2.1、定态光波按波面分类</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530172031159.png" alt="image-20200530172031159"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530172048194.png" alt="image-20200530172048194"></p>
+<h2 id="2-2、平面波的表达式"><a href="#2-2、平面波的表达式" class="headerlink" title="2.2、平面波的表达式"></a>2.2、平面波的表达式</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530172451773.png" alt="image-20200530172451773"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530172749681.png" alt="image-20200530172749681"></p>
+<h2 id="2-3、波矢的方向角表示"><a href="#2-3、波矢的方向角表示" class="headerlink" title="2.3、波矢的方向角表示"></a>2.3、波矢的方向角表示</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530172138688.png" alt="image-20200530172138688"></p>
+<h2 id="2-4、传播方向"><a href="#2-4、传播方向" class="headerlink" title="2.4、传播方向"></a>2.4、传播方向</h2><ul>
+<li><h2 id="沿-z向传播"><a href="#沿-z向传播" class="headerlink" title="沿+z向传播"></a>沿+z向传播</h2></li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530172225409.png" alt="image-20200530172225409"></p>
+<hr>
+<ul>
+<li><h2 id="向-z方向传播"><a href="#向-z方向传播" class="headerlink" title="向-z方向传播"></a>向-z方向传播</h2></li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530172237206.png" alt="image-20200530172237206"></p>
+<h2 id="2-5、球面波的表达式"><a href="#2-5、球面波的表达式" class="headerlink" title="2.5、球面波的表达式"></a>2.5、球面波的表达式</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530172541090.png" alt="image-20200530172541090"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530172828539.png" alt="image-20200530172828539"></p>
+<hr>
+<h2 id="2-6、定态光波"><a href="#2-6、定态光波" class="headerlink" title="2.6、定态光波"></a>2.6、定态光波</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530172614625.png" alt="image-20200530172614625"></p>
+<h2 id="2-7、有关光波的几个概念"><a href="#2-7、有关光波的几个概念" class="headerlink" title="2.7、有关光波的几个概念"></a>2.7、有关光波的几个概念</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530172859435.png" alt="image-20200530172859435"></p>
+<h3 id="近轴条件"><a href="#近轴条件" class="headerlink" title="近轴条件"></a>近轴条件</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530172956877.png" alt="image-20200530172956877"></p>
+<h3 id="远场条件"><a href="#远场条件" class="headerlink" title="远场条件"></a>远场条件</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530173012291.png" alt="image-20200530173012291"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530173032779.png" alt="image-20200530173032779"></p>
+<hr>
+<h2 id="2-8、相位的超前与滞后"><a href="#2-8、相位的超前与滞后" class="headerlink" title="2.8、相位的超前与滞后"></a>2.8、相位的超前与滞后</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530173223547.png" alt="image-20200530173223547"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530173355282.png" alt="image-20200530173355282"></p>
+<hr>
+<h2 id="2-9、作业"><a href="#2-9、作业" class="headerlink" title="2.9、作业"></a>2.9、作业</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530173718308.png" alt="image-20200530173718308"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530173729897.png" alt="image-20200530173729897"></p>
+<hr>
+<h1 id="3、光的相干叠加与非相干叠加"><a href="#3、光的相干叠加与非相干叠加" class="headerlink" title="3、光的相干叠加与非相干叠加"></a>3、光的相干叠加与非相干叠加</h1><h2 id="3-1、光波的叠加原理"><a href="#3-1、光波的叠加原理" class="headerlink" title="3.1、光波的叠加原理"></a>3.1、光波的叠加原理</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530171218058.png" alt="image-20200530171218058"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530171326391.png" alt="image-20200530171326391"></p>
+<hr>
+<h2 id="3-2、相干条件"><a href="#3-2、相干条件" class="headerlink" title="3.2、相干条件"></a>3.2、相干条件</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530171433229.png" alt="image-20200530171433229"></p>
+<h2 id="3-3、不同频率光的叠加"><a href="#3-3、不同频率光的叠加" class="headerlink" title="3.3、不同频率光的叠加"></a>3.3、不同频率光的叠加</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530171547946.png" alt="image-20200530171547946"></p>
+<hr>
+<h2 id="3-4、作业"><a href="#3-4、作业" class="headerlink" title="3.4、作业"></a>3.4、作业</h2><ul>
+<li><p><strong>教材1.6题（Page366）如图所示，一平面简谐波沿r方向传播，波长为λ，设r=0的点的相位为<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image002-1590829606967.png" alt="img">，</strong></p>
+<p><strong>（1）写出沿r方向波的相位分布<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image004-1590829606967.png" alt="img">；</strong></p>
+<p><strong>（2）写出沿x轴波的相位分布<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image006-1590829606968.png" alt="img">；</strong></p>
+<p><strong>（3）写出沿y轴波的相位分布<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image008-1590829606968.png" alt="img">。</strong></p>
+</li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image010.jpg" alt="未命名"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530170743996.png" alt="image-20200530170743996"></p>
+<hr>
+<h1 id="4、杨氏干涉和衬比度"><a href="#4、杨氏干涉和衬比度" class="headerlink" title="4、杨氏干涉和衬比度"></a>4、杨氏干涉和衬比度</h1><h2 id="4-1、相干光的获得"><a href="#4-1、相干光的获得" class="headerlink" title="4.1、相干光的获得"></a>4.1、相干光的获得</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530165702104.png" alt="image-20200530165702104"></p>
+<h2 id="4-2、杨氏干涉"><a href="#4-2、杨氏干涉" class="headerlink" title="4.2、杨氏干涉"></a>4.2、杨氏干涉</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530165921630.png" alt="image-20200530165921630"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530165957247.png" alt="image-20200530165957247"></p>
+<h2 id="4-3、杨氏双孔干涉"><a href="#4-3、杨氏双孔干涉" class="headerlink" title="4.3、杨氏双孔干涉"></a>4.3、杨氏双孔干涉</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530170150053.png" alt="image-20200530170150053"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530170225473.png" alt="image-20200530170225473"></p>
+<hr>
+<h2 id="4-4、当有介质时"><a href="#4-4、当有介质时" class="headerlink" title="4.4、当有介质时"></a>4.4、当有介质时</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530170345482.png" alt="image-20200530170345482"></p>
+<h2 id="4-5、干涉条纹的反衬度（可见度）"><a href="#4-5、干涉条纹的反衬度（可见度）" class="headerlink" title="4.5、干涉条纹的反衬度（可见度）"></a>4.5、干涉条纹的反衬度（可见度）</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530170541378.png" alt="image-20200530170541378"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530170556178.png" alt="image-20200530170556178"></p>
+<hr>
+<h2 id="4-5、小结（重点）"><a href="#4-5、小结（重点）" class="headerlink" title="4.5、小结（重点）"></a>4.5、小结（重点）</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530170428203.png" alt="image-20200530170428203"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530170448783.png" alt="image-20200530170448783"></p>
+<h2 id="4-6、最大级数"><a href="#4-6、最大级数" class="headerlink" title="4.6、最大级数"></a>4.6、最大级数</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200630230349443.png" alt="image-20200630230349443"></p>
+<h2 id="4-7、作业"><a href="#4-7、作业" class="headerlink" title="4.7、作业"></a>4.7、作业</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200629122510544.png" alt="image-20200629122510544">光波振幅=A;   空间频率=1/lanmda</p>
+<ul>
+<li><p><strong>教材1.7题（Page366）在玻璃中z方向上传播的单色平面波的波函数为</strong></p>
+<p><strong><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image002-1590829678273.png" alt="img"></strong></p>
+<p><strong>式中c为真空中的光速，时间以s为单位，电场强度以V/m为单位，距离以m为单位，试求：</strong></p>
+<p><strong>（1）光波的振幅和时间频率；</strong></p>
+<p><strong>（2）玻璃的折射率；</strong></p>
+<p><strong>（3）z方向的空间频率；</strong></p>
+<p><strong>（4）在xz平面内与x轴成45角方向上的空间频率。</strong></p>
+</li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530170941611.png" alt="image-20200530170941611"></p>
+<hr>
+<h1 id="5、衍射和半波带法"><a href="#5、衍射和半波带法" class="headerlink" title="5、衍射和半波带法"></a>5、衍射和半波带法</h1><h2 id="5-1、引入"><a href="#5-1、引入" class="headerlink" title="5.1、引入"></a>5.1、引入</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530162813149.png" alt="image-20200530162813149"></p>
+<h2 id="5-2、惠更斯—菲涅耳原理"><a href="#5-2、惠更斯—菲涅耳原理" class="headerlink" title="5.2、惠更斯—菲涅耳原理"></a>5.2、惠更斯—菲涅耳原理</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530162909109.png" alt="image-20200530162909109"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530162932429.png" alt="image-20200530162932429"></p>
+<h2 id="5-3、衍射的分类"><a href="#5-3、衍射的分类" class="headerlink" title="5.3、衍射的分类"></a>5.3、衍射的分类</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530163551631.png" alt="image-20200530163551631"></p>
+<h2 id="5-4、菲涅耳衍射（圆孔、圆屏）"><a href="#5-4、菲涅耳衍射（圆孔、圆屏）" class="headerlink" title="5.4、菲涅耳衍射（圆孔、圆屏）"></a>5.4、菲涅耳衍射（圆孔、圆屏）</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530163626465.png" alt="image-20200530163626465"></p>
+<h3 id="半波带法分析菲涅耳圆孔衍射"><a href="#半波带法分析菲涅耳圆孔衍射" class="headerlink" title="半波带法分析菲涅耳圆孔衍射"></a>半波带法分析菲涅耳圆孔衍射</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530163658737.png" alt="image-20200530163658737"></p>
+<hr>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530163916557.png" alt="image-20200530163916557"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530163933372.png" alt="image-20200530163933372"></p>
+<h2 id="5-5、波带片"><a href="#5-5、波带片" class="headerlink" title="5.5、波带片"></a>5.5、波带片</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530164019709.png" alt="image-20200530164019709"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530164132172.png" alt="image-20200530164132172"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530164111240.png" alt="image-20200530164111240"></p>
+<h2 id="5-6、波带片方程（n为半波带数）"><a href="#5-6、波带片方程（n为半波带数）" class="headerlink" title="5.6、波带片方程（n为半波带数）"></a>5.6、波带片方程（n为半波带数）</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530164251009.png" alt="image-20200530164251009"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530164431537.png" alt="image-20200530164431537"></p>
+<hr>
+<h2 id="5-7、作业"><a href="#5-7、作业" class="headerlink" title="5.7、作业"></a>5.7、作业</h2><ul>
+<li><p><strong>教材3.16题（Page378）在双缝干涉的情况下，如图所示，证明</strong></p>
+<p><strong>（1）屏幕上的光强为<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image002-1590828534117.png" alt="img">；</strong></p>
+<p><strong>（2）第一极小出现在<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image004-1590828534118.png" alt="img">。</strong></p>
+</li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530165037930.png" alt="image-20200530165037930"></p>
+<hr>
+<ul>
+<li><p><strong>教材3.17题（Page378）如图所示的杨氏实验装置中，若单色光源的波长λ=500nm，d=S1， S2=0.33cm，r0=3m，试求：</strong></p>
+<p><strong>（1）条纹间隔；</strong></p>
+<p><strong>（2）若在S2后面置一厚度h=0.01mm的平行平面玻璃片，试确定条纹移动方向和计算位移的公式；假设一直条纹的位移为4.73mm，试计算玻璃的折射率。</strong></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image002.jpg" alt="未命名"></p>
+</li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530165153247.png" alt="image-20200530165153247"></p>
+<hr>
+<ul>
+<li><strong>教材3.18题（Page379）用很薄的云母片（n=1.58）覆盖在双缝装置中的一条缝上，这时，光屏上的中心为原来的第七级亮纹所占据，若λ=550nm，则云母片有多厚？</strong></li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530165334462.png" alt="image-20200530165334462"></p>
+<hr>
+<ul>
+<li><p><strong>教材3.20题（Page379）波长为λ的平行单色光以小倾角θ斜入射到间距为<em>t的双缝上，设接收屏到双缝距离为</em>D。（1）求零级主极大的位置；（2）假设在屏上到双缝距离都相等的地方恰好出现暗条纹，倾角θ必须满足什么条件？</strong></p>
+<p>解：<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image002-1590828843299.jpg" alt="未命名"></p>
+</li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530165457720.png" alt="image-20200530165457720"></p>
+<hr>
+<h1 id="6、单缝衍射"><a href="#6、单缝衍射" class="headerlink" title="6、单缝衍射"></a>6、单缝衍射</h1><h2 id="6-1、夫琅禾费单缝衍射"><a href="#6-1、夫琅禾费单缝衍射" class="headerlink" title="6.1、夫琅禾费单缝衍射"></a>6.1、夫琅禾费单缝衍射</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530114933951.png" alt="image-20200530114933951"></p>
+<h2 id="6-2、衍射花样"><a href="#6-2、衍射花样" class="headerlink" title="6.2、衍射花样"></a>6.2、衍射花样</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530115008655.png" alt="image-20200530115008655"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530121329315.png" alt="image-20200530121329315"></p>
+<h2 id="6-3、单缝衍射的强度公式"><a href="#6-3、单缝衍射的强度公式" class="headerlink" title="6.3、单缝衍射的强度公式"></a>6.3、单缝衍射的强度公式</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530120944620.png" alt="image-20200530120944620"></p>
+<h3 id="光程差"><a href="#光程差" class="headerlink" title="光程差"></a>光程差</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530121100352.png" alt="image-20200530121100352"></p>
+<hr>
+<h3 id="振幅矢量求和"><a href="#振幅矢量求和" class="headerlink" title="振幅矢量求和"></a>振幅矢量求和</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530121200045.png" alt="image-20200530121200045"></p>
+<hr>
+<h2 id="6-4、狭缝移动的影响"><a href="#6-4、狭缝移动的影响" class="headerlink" title="6.4、狭缝移动的影响"></a>6.4、狭缝移动的影响</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530121400091.png" alt="image-20200530121400091"></p>
+<h2 id="6-5、透镜移动的影响"><a href="#6-5、透镜移动的影响" class="headerlink" title="6.5、透镜移动的影响"></a>6.5、透镜移动的影响</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530121451602.png" alt="image-20200530121451602"></p>
+<hr>
+<h2 id="6-6、衍射角"><a href="#6-6、衍射角" class="headerlink" title="6.6、衍射角"></a>6.6、衍射角</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530121542409.png" alt="image-20200530121542409"></p>
+<h3 id="衍射角宽度"><a href="#衍射角宽度" class="headerlink" title="衍射角宽度"></a>衍射角宽度</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530121803151.png" alt="image-20200530121803151"></p>
+<h2 id="6-7、衍射花样特点"><a href="#6-7、衍射花样特点" class="headerlink" title="6.7、衍射花样特点"></a>6.7、衍射花样特点</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530121657270.png" alt="image-20200530121657270"></p>
+<hr>
+<h2 id="6-8、互补屏"><a href="#6-8、互补屏" class="headerlink" title="6.8、互补屏"></a>6.8、互补屏</h2><ul>
+<li><h2 id="细丝与狭缝的衍射花样，除零级中央主极大外，处处相同。激光测径仪的原理"><a href="#细丝与狭缝的衍射花样，除零级中央主极大外，处处相同。激光测径仪的原理" class="headerlink" title="细丝与狭缝的衍射花样，除零级中央主极大外，处处相同。激光测径仪的原理"></a>细丝与狭缝的衍射花样，除零级中央主极大外，处处相同。激光测径仪的原理</h2></li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530122055461.png" alt="image-20200530122055461"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530122112228.png" alt="image-20200530122112228"></p>
+<hr>
+<h2 id="6-9、夫琅禾费矩孔衍射"><a href="#6-9、夫琅禾费矩孔衍射" class="headerlink" title="6.9、夫琅禾费矩孔衍射"></a>6.9、夫琅禾费矩孔衍射</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530123023499.png" alt="image-20200530123023499"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530123102488.png" alt="image-20200530123102488"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530123226667.png" alt="image-20200530123226667"></p>
+<h3 id="衍射图样"><a href="#衍射图样" class="headerlink" title="衍射图样"></a>衍射图样</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530123131104.png" alt="image-20200530123131104"></p>
+<hr>
+<h2 id="6-10、作业"><a href="#6-10、作业" class="headerlink" title="6.10、作业"></a>6.10、作业</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200629150549512.png" alt="image-20200629150549512"></p>
+<ul>
+<li><strong>教材3.28题（Page381）波长为λ=563.3nm的单色光从远处的光源发出，经过一个直径D=2.6mm的圆孔，在距孔1m处放一屏幕，问：（1）幕上正对孔中心的点P是亮的还是暗的？（2）要使P点的明暗变成与（1）相反的情况，至少要将屏幕移动多少距离？</strong></li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530123346863.png" alt="image-20200530123346863"></p>
+<hr>
+<ul>
+<li><strong>教材3.32题（Page381）波长为500.0nm的单色光垂直入射到直径为4mm的圆孔上，接收屏在圆孔后1.5m处，问孔的轴线与屏的焦点处是亮点还是暗点？如果要使该点的光强发生相反的变化，孔的直径要改变多少？</strong></li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530123431263.png" alt="image-20200530123431263"></p>
+<hr>
+<ul>
+<li><strong>教材3.33题（Page381）波长为632.8nm的平行光垂直入射到圆孔衍射屏上，屏后轴上距离1m处出现一个亮点，设此时圆孔恰好仅露出第一个半波带，试求：(1)圆孔的半径；（2）由该点向衍射屏移动多远可以出现第一个暗点？</strong></li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530123527233.png" alt="image-20200530123527233"></p>
+<hr>
+<ul>
+<li><strong>图示为两个特殊形状的菲涅耳衍射屏，阴影和浅蓝色部分不透光，其中标出了各个圆环到轴上场点的光程，b为中心到场点的光程，分别计算轴上场点处的衍射光强，设无衍射屏时，场点的光强为<img src="https://edu-image.nosdn.127.net/_PhotoUploadUtils_80f30e9e-a261-4514-81e3-583da961d997.png" alt="img">。提示：用振幅矢量法求解，需画出相关的振幅矢量合成图，并假设每个半波带发出次波在场点的振幅相等，振幅矢量均为半圆弧。（没有画图扣一半分）</strong></li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530123740719.png" alt="image-20200530123740719"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530123802593.png" alt="image-20200530123802593"></p>
+<h2 id="6-11、中央主极大的位置"><a href="#6-11、中央主极大的位置" class="headerlink" title="6.11、中央主极大的位置"></a>6.11、中央主极大的位置</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530112534874.png" alt="image-20200530112534874"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530112612145.png" alt="image-20200530112612145"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530112643779.png" alt="image-20200530112643779"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530112957354.png" alt="image-20200530112957354"></p>
+<hr>
+<h2 id="6-12、衍射与孔径的空间尺度关系"><a href="#6-12、衍射与孔径的空间尺度关系" class="headerlink" title="6.12、衍射与孔径的空间尺度关系"></a>6.12、衍射与孔径的空间尺度关系</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530113232821.png" alt="image-20200530113232821"></p>
+<ul>
+<li><h2 id="几何光学是衍射的0级近似"><a href="#几何光学是衍射的0级近似" class="headerlink" title="几何光学是衍射的0级近似"></a>几何光学是衍射的0级近似</h2></li>
+<li><h2 id="衍射能量大部分集中于0级。"><a href="#衍射能量大部分集中于0级。" class="headerlink" title="衍射能量大部分集中于0级。"></a>衍射能量大部分集中于0级。</h2></li>
+<li><h2 id="有衍射反比关系，即0级的空间角宽度与缝宽成反比。"><a href="#有衍射反比关系，即0级的空间角宽度与缝宽成反比。" class="headerlink" title="有衍射反比关系，即0级的空间角宽度与缝宽成反比。"></a>有衍射反比关系，即0级的空间角宽度与缝宽成反比。</h2></li>
+</ul>
+<hr>
+<h2 id="6-13、干涉与衍射的区别和联系-重点"><a href="#6-13、干涉与衍射的区别和联系-重点" class="headerlink" title="6.13、干涉与衍射的区别和联系 (重点)"></a>6.13、干涉与衍射的区别和联系 (重点)</h2><p> <img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530113647940.png" alt="image-20200530113647940"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530113626436.png" alt="image-20200530113626436"></p>
+<h2 id="6-14、作业"><a href="#6-14、作业" class="headerlink" title="6.14、作业"></a>6.14、作业</h2><ul>
+<li><strong>教材3.41题（Page382）如图所示，用波长为632.8 nm的平行光垂直照射宽度为0.2mm的单狭缝，缝后有一焦距为60cm的透镜，光屏在此透镜的焦平面上，求衍射图样中心到第二条暗纹的距离。</strong></li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530114206903.png" alt="image-20200530114206903"></p>
+<hr>
+<ul>
+<li><strong>教材3.44题（Page383）波长480nm的平行单色光垂直入射到缝宽0.4mm的单缝衍射屏上，缝后透镜焦距为60cm，计算当屏上一点到缝两端的位相差分别为<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image002-1590810140262.png" alt="img">和</strong><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image002-1590810178517.png" alt="img"><strong>时，该点到焦点的距离分别是多少？</strong></li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530114358650.png" alt="image-20200530114358650"></p>
+<hr>
+<ul>
+<li><strong>教材3.49题（Page384）一反射式天文望远镜的通光孔径为2.5m，求可以分辨的双星的最小夹角。与人眼相比，分辨本领提高了多少倍？人眼瞳孔的直径约为2mm。</strong></li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530114501081.png" alt="image-20200530114501081"></p>
+<hr>
+<ul>
+<li><strong>某种单色平行光垂直入射在单缝上，单缝宽<em>a</em>= 0.15 mm．缝后放一个焦距f</strong> <strong>= 400 mm的凸透镜，在透镜的焦平面上，测得中央明条纹两侧的两个第三级暗条纹之间的距离为8.0 mm，求入射光的波长。</strong></li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530114632514.png" alt="image-20200530114632514"></p>
+<hr>
+<h1 id="7、折射反射"><a href="#7、折射反射" class="headerlink" title="7、折射反射"></a>7、折射反射</h1><h2 id="7-1、光矢量的正交分解"><a href="#7-1、光矢量的正交分解" class="headerlink" title="7.1、光矢量的正交分解"></a>7.1、光矢量的正交分解</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529223644138.png" alt="image-20200529223644138"></p>
+<h2 id="7-2、菲涅耳（Fresnel）公式-：电场强度"><a href="#7-2、菲涅耳（Fresnel）公式-：电场强度" class="headerlink" title="7.2、菲涅耳（Fresnel）公式 ：电场强度"></a>7.2、菲涅耳（Fresnel）公式 ：电场强度</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529223716929.png" alt="image-20200529223716929"></p>
+<h2 id="7-3、菲涅耳公式的物理意义"><a href="#7-3、菲涅耳公式的物理意义" class="headerlink" title="7.3、菲涅耳公式的物理意义"></a>7.3、菲涅耳公式的物理意义</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529223900006.png" alt="image-20200529223900006"></p>
+<h2 id="7-4、复振幅的反射率与透射率"><a href="#7-4、复振幅的反射率与透射率" class="headerlink" title="7.4、复振幅的反射率与透射率"></a>7.4、复振幅的反射率与透射率</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529224654593.png" alt="image-20200529224654593"></p>
+<h3 id="垂直入射时"><a href="#垂直入射时" class="headerlink" title="垂直入射时"></a>垂直入射时</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529231333087.png" alt="image-20200529231333087"></p>
+<h2 id="7-5、光强的反射率与透射率"><a href="#7-5、光强的反射率与透射率" class="headerlink" title="7.5、光强的反射率与透射率"></a>7.5、光强的反射率与透射率</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529224728754.png" alt="image-20200529224728754"></p>
+<hr>
+<h2 id="7-6、能流的反射率与透射率"><a href="#7-6、能流的反射率与透射率" class="headerlink" title="7.6、能流的反射率与透射率"></a>7.6、能流的反射率与透射率</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529225111497.png" alt="image-20200529225111497"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529225838672.png" alt="image-20200529225838672"></p>
+<hr>
+<h2 id="7-7、布儒斯特角和全反射角"><a href="#7-7、布儒斯特角和全反射角" class="headerlink" title="7.7、布儒斯特角和全反射角"></a>7.7、布儒斯特角和全反射角</h2><h3 id="布儒斯特角"><a href="#布儒斯特角" class="headerlink" title="布儒斯特角"></a>布儒斯特角</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529230821355.png" alt="image-20200529230821355"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529230716072.png" alt="image-20200529230716072"></p>
+<h3 id="全反射角"><a href="#全反射角" class="headerlink" title="全反射角"></a>全反射角</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529230320833.png" alt="image-20200529230320833"></p>
+<h3 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529230558977.png" alt="image-20200529230558977"></p>
+<h2 id="7-8、薄膜的反射的半波损失"><a href="#7-8、薄膜的反射的半波损失" class="headerlink" title="7.8、薄膜的反射的半波损失"></a>7.8、薄膜的反射的半波损失</h2><ul>
+<li><h3 id="当薄膜两侧的折射率相等时"><a href="#当薄膜两侧的折射率相等时" class="headerlink" title="当薄膜两侧的折射率相等时"></a>当薄膜两侧的折射率相等时</h3></li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529231613152.png" alt="image-20200529231613152"></p>
+<ul>
+<li><h3 id="当薄膜两侧折射率不等，但薄膜的折射率最大（或最小），则与上方的情况相等"><a href="#当薄膜两侧折射率不等，但薄膜的折射率最大（或最小），则与上方的情况相等" class="headerlink" title="当薄膜两侧折射率不等，但薄膜的折射率最大（或最小），则与上方的情况相等"></a>当薄膜两侧折射率不等，但薄膜的折射率最大（或最小），则与上方的情况相等</h3></li>
+<li><h3 id="当折射率依次增大，则不存在半波损失"><a href="#当折射率依次增大，则不存在半波损失" class="headerlink" title="当折射率依次增大，则不存在半波损失"></a>当折射率依次增大，则不存在半波损失</h3></li>
+<li><h3 id="当折射率依次减小，也不存在半波损失"><a href="#当折射率依次减小，也不存在半波损失" class="headerlink" title="当折射率依次减小，也不存在半波损失"></a>当折射率依次减小，也不存在半波损失</h3></li>
+</ul>
+<hr>
+<h2 id="7-9、斯托克斯-Stocks-倒逆关系"><a href="#7-9、斯托克斯-Stocks-倒逆关系" class="headerlink" title="7.9、斯托克斯(Stocks)倒逆关系"></a>7.9、斯托克斯(Stocks)倒逆关系</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529232345775.png" alt="image-20200529232345775"></p>
+<hr>
+<h2 id="7-10、作业"><a href="#7-10、作业" class="headerlink" title="7.10、作业"></a>7.10、作业</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529232633932.png" alt="image-20200529232633932"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529232555003.png" alt="image-20200529232555003"></p>
+<hr>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529232729937.png" alt="image-20200529232729937"></p>
+<hr>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529232836444.png" alt="image-20200529232836444"></p>
+<hr>
+<h1 id="8、干涉仪与光的时空相干性"><a href="#8、干涉仪与光的时空相干性" class="headerlink" title="8、干涉仪与光的时空相干性"></a>8、干涉仪与光的时空相干性</h1><h2 id="8-1、薄膜干涉"><a href="#8-1、薄膜干涉" class="headerlink" title="8.1、薄膜干涉"></a>8.1、薄膜干涉</h2><blockquote>
+<p>在薄膜干涉中，未存在半波损失时：</p>
+<ol>
+<li>暗纹：2nh = (2j+1)lambda</li>
+<li>亮纹：2nh = j lambda</li>
+</ol>
+<p>但很多情况下会存在半波损失，所以条件相反。但<strong>第一条暗纹的j=0！</strong></p>
+</blockquote>
+<h3 id="1、概念"><a href="#1、概念" class="headerlink" title="1、概念"></a>1、概念</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529205816497.png" alt="image-20200529205816497"></p>
+<h3 id="2、两类典型的薄膜干涉"><a href="#2、两类典型的薄膜干涉" class="headerlink" title="2、两类典型的薄膜干涉"></a>2、两类典型的薄膜干涉</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529210001232.png" alt="image-20200529210001232"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529210128070.png" alt="image-20200529210128070"></p>
+<h3 id="3、等倾干涉"><a href="#3、等倾干涉" class="headerlink" title="3、等倾干涉"></a>3、等倾干涉</h3><h4 id="3-1、概念"><a href="#3-1、概念" class="headerlink" title="3.1、概念"></a>3.1、概念</h4><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529210300756.png" alt="image-20200529210300756"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529210444509.png" alt="image-20200529210444509"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529210752169.png" alt="image-20200529210752169"></p>
+<h4 id="3-2、亮暗纹条件"><a href="#3-2、亮暗纹条件" class="headerlink" title="3.2、亮暗纹条件"></a>3.2、亮暗纹条件</h4><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529211746273.png" alt="image-20200529211746273"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529213421112.png" alt="image-20200529213421112"></p>
+<h4 id="3-3、薄膜厚度改变的影响"><a href="#3-3、薄膜厚度改变的影响" class="headerlink" title="3.3、薄膜厚度改变的影响"></a>3.3、薄膜厚度改变的影响</h4><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529213649911.png" alt="image-20200529213649911"></p>
+<h4 id="3-4、角距离"><a href="#3-4、角距离" class="headerlink" title="3.4、角距离"></a>3.4、角距离</h4><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529211412226.png" alt="image-20200529211412226"></p>
+<h4 id="3-5、角宽度"><a href="#3-5、角宽度" class="headerlink" title="3.5、角宽度"></a>3.5、角宽度</h4><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529211644889.png" alt="image-20200529211644889"></p>
+<h4 id="3-6、半波损失"><a href="#3-6、半波损失" class="headerlink" title="3.6、半波损失"></a>3.6、半波损失</h4><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529211938300.png" alt="image-20200529211938300"></p>
+<h3 id="4、等厚干涉"><a href="#4、等厚干涉" class="headerlink" title="4、等厚干涉"></a>4、等厚干涉</h3><h4 id="4-1、概念"><a href="#4-1、概念" class="headerlink" title="4.1、概念"></a>4.1、概念</h4><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529212156112.png" alt="image-20200529212156112"></p>
+<h4 id="4-2、亮纹条件"><a href="#4-2、亮纹条件" class="headerlink" title="4.2、亮纹条件"></a>4.2、亮纹条件</h4><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529212510619.png" alt="image-20200529212510619"></p>
+<h4 id="4-3、垂直入射时亮纹条件"><a href="#4-3、垂直入射时亮纹条件" class="headerlink" title="4.3、垂直入射时亮纹条件"></a>4.3、垂直入射时亮纹条件</h4><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529212621546.png" alt="image-20200529212621546"></p>
+<h4 id="4-4、相邻条纹的厚度差"><a href="#4-4、相邻条纹的厚度差" class="headerlink" title="4.4、相邻条纹的厚度差"></a>4.4、相邻条纹的厚度差</h4><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529212637980.png" alt="image-20200529212637980"></p>
+<h4 id="4-5、等厚干涉的弯曲"><a href="#4-5、等厚干涉的弯曲" class="headerlink" title="4.5、等厚干涉的弯曲"></a>4.5、等厚干涉的弯曲</h4><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529212752557.png" alt="image-20200529212752557"></p>
+<h4 id="4-6、等厚干涉的应用"><a href="#4-6、等厚干涉的应用" class="headerlink" title="4.6、等厚干涉的应用"></a>4.6、等厚干涉的应用</h4><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529212904093.png" alt="image-20200529212904093"></p>
+<h2 id="8-2、迈克耳孙-Michelson-干涉仪"><a href="#8-2、迈克耳孙-Michelson-干涉仪" class="headerlink" title="8.2、迈克耳孙(Michelson)干涉仪"></a>8.2、迈克耳孙(Michelson)干涉仪</h2><blockquote>
+<p>使用空气薄膜时，没有半波损失</p>
+</blockquote>
+<h3 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529213055638.png" alt="image-20200529213055638"></p>
+<h3 id="干涉条纹的移动"><a href="#干涉条纹的移动" class="headerlink" title="干涉条纹的移动"></a>干涉条纹的移动</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529213248605.png" alt="image-20200529213248605"></p>
+<h2 id="8-3、马赫-曾德尔干涉仪"><a href="#8-3、马赫-曾德尔干涉仪" class="headerlink" title="8.3、马赫-曾德尔干涉仪"></a>8.3、马赫-曾德尔干涉仪</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529213330606.png" alt="image-20200529213330606"></p>
+<h2 id="8-4、作业"><a href="#8-4、作业" class="headerlink" title="8.4、作业"></a>8.4、作业</h2><ul>
+<li><strong>教材4.6题（Page385）沿着与肥皂膜的法线成35角的方向观察膜呈绿色（λ=5000Å），设肥皂水的折射率为1.33，求：（1）薄膜的厚度；（2）如果垂直注视时，膜呈何种颜色？</strong></li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529214903352.png" alt="image-20200529214903352"></p>
+<hr>
+<ul>
+<li><strong>教材4.13题（Page386）一个Michelson干涉仪被调节，当用波长λ=5000Å扩展光源照明时会出现同心圆环形条纹，若要移动其中一臂而使圆环中心处相继出现1000条条纹，则该臂要移动多少？若中心是亮的，计算第一个暗环的角半径。（要求用两臂的路径距离差和波长表示）</strong></li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529214947246.png" alt="image-20200529214947246"></p>
+<hr>
+<ul>
+<li><strong>教材4.16题（Page387）玻璃板上有一层油膜，波长可连续改变的单色光正入射，在λ=5000Å和λ=7000Å时，观察到反射光干涉相消，并且在这两波长之间再无其它波长的光相消。（1）证明油膜的折射率一定小于1.5（玻璃的折射率1.5）。（2）若油的折射率为1.3，求油膜的厚度。</strong></li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529215020185.png" alt="image-20200529215020185"></p>
+<hr>
+<ul>
+<li><p><strong>波长为500nm的单色光垂直照射到由两块光学平玻璃构成的空气劈尖上，在观察反射光的干涉现象中，距劈尖棱边</strong> <strong><em>l = 1.56cm的</em>A处是从棱边算起的第四条暗条纹中心。</strong></p>
+<p><strong>(1)</strong> <strong>求此空气劈尖的劈尖角q</strong> 。</p>
+<p><strong>(2)</strong> <strong>改用600 nm的单色光垂直照射到此劈尖上仍观察反射光的干涉条纹，A处是明条纹，还是暗条纹？</strong></p>
+</li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529215046748.png" alt="image-20200529215046748"></p>
+<hr>
+<h1 id="9、牛顿环干涉"><a href="#9、牛顿环干涉" class="headerlink" title="9、牛顿环干涉"></a>9、牛顿环干涉</h1><blockquote>
+<p>原理为等厚干涉</p>
+</blockquote>
+<h2 id="9-1、牛顿环类型"><a href="#9-1、牛顿环类型" class="headerlink" title="9.1、牛顿环类型"></a>9.1、牛顿环类型</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526201919957.png" alt="image-20200526201919957"></p>
+<h2 id="9-2、光程差以及牛顿环半径"><a href="#9-2、光程差以及牛顿环半径" class="headerlink" title="9.2、光程差以及牛顿环半径"></a>9.2、光程差以及牛顿环半径</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526202401197.png" alt="image-20200526202401197"></p>
+<h3 id="反射光与透射光的半径不同"><a href="#反射光与透射光的半径不同" class="headerlink" title="==反射光与透射光的半径不同=="></a>==反射光与透射光的半径不同==</h3><p>==投射光无半波损失==</p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526202538907.png" alt="image-20200526202538907"></p>
+<h2 id="9-3、干涉滤波片"><a href="#9-3、干涉滤波片" class="headerlink" title="9.3、干涉滤波片"></a>9.3、干涉滤波片</h2><ol>
+<li>反射与透射干涉图样相反</li>
+<li>增透</li>
+<li>增反</li>
+</ol>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526202915218.png" alt="image-20200526202915218"></p>
+<h3 id="增透（反射率公式）"><a href="#增透（反射率公式）" class="headerlink" title="增透（反射率公式）"></a>增透（反射率公式）</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526203311455.png" alt="image-20200526203311455"></p>
+<h2 id="9-4、反射率趋近于1"><a href="#9-4、反射率趋近于1" class="headerlink" title="9.4、反射率趋近于1"></a>9.4、反射率趋近于1</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526203524855.png" alt="image-20200526203524855"></p>
+<h2 id="9-5、透射率趋近于1"><a href="#9-5、透射率趋近于1" class="headerlink" title="9.5、透射率趋近于1"></a>9.5、透射率趋近于1</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526203706514.png" alt="image-20200526203706514"></p>
+<h2 id="9-6、Fabry-Perot干涉仪和标准具"><a href="#9-6、Fabry-Perot干涉仪和标准具" class="headerlink" title="9.6、Fabry-Perot干涉仪和标准具"></a>9.6、Fabry-Perot干涉仪和标准具</h2><h3 id="1、概念-1"><a href="#1、概念-1" class="headerlink" title="1、概念"></a>1、概念</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526203807340.png" alt="image-20200526203807340"></p>
+<h3 id="2、透射光光强"><a href="#2、透射光光强" class="headerlink" title="2、透射光光强"></a>2、透射光光强</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526204124526.png" alt="image-20200526204124526"></p>
+<h3 id="3、反射光光强"><a href="#3、反射光光强" class="headerlink" title="3、反射光光强"></a>3、反射光光强</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526204151830.png" alt="image-20200526204151830"></p>
+<h3 id="4、条纹的半值宽度"><a href="#4、条纹的半值宽度" class="headerlink" title="4、条纹的半值宽度"></a>4、条纹的半值宽度</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526221626137.png" alt="image-20200526221626137"></p>
+<h3 id="5、半值宽度公式"><a href="#5、半值宽度公式" class="headerlink" title="==5、半值宽度公式=="></a>==5、半值宽度公式==</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526221722459.png" alt="image-20200526221722459"></p>
+<h3 id="6、半角宽度"><a href="#6、半角宽度" class="headerlink" title="==6、半角宽度=="></a>==6、半角宽度==</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526223122662.png" alt="image-20200526223122662"></p>
+<h2 id="9-7、多光束干涉"><a href="#9-7、多光束干涉" class="headerlink" title="9.7、多光束干涉"></a>9.7、多光束干涉</h2><p>==多光束干涉条纹要细锐的多==</p>
+<h3 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526221838485.png" alt="image-20200526221838485"></p>
+<h2 id="9-8、Fabry-Perot干涉仪的分辨本领"><a href="#9-8、Fabry-Perot干涉仪的分辨本领" class="headerlink" title="9.8、Fabry-Perot干涉仪的分辨本领"></a>9.8、Fabry-Perot干涉仪的分辨本领</h2><h3 id="分辨本领："><a href="#分辨本领：" class="headerlink" title="==分辨本领：=="></a>==分辨本领：==<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200630181828158.png" alt="image-20200630181828158"></h3><h3 id="可分辨最小波长间隔："><a href="#可分辨最小波长间隔：" class="headerlink" title="==可分辨最小波长间隔：=="></a>==可分辨最小波长间隔：==</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526222608964.png" alt="image-20200526222608964"></p>
+<h2 id="9-9、小结"><a href="#9-9、小结" class="headerlink" title="9.9、小结"></a>9.9、小结</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526223008998.png" alt="image-20200526223008998"></p>
+<h2 id="9-10、作业"><a href="#9-10、作业" class="headerlink" title="9.10、作业"></a>9.10、作业</h2><ul>
+<li><strong>补充题：用单色光观察牛顿环，测得某一亮环的直径为3mm，在它外边第5个亮环的直径为4.6mm，所用平凸透镜的凸面曲率半径为1.03m，求此单色光的波长。</strong></li>
+</ul>
+<p>解：对于亮环，有 <img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image215.png" alt="img"> （<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image002-1590505386054.png" alt="img">）</p>
+<p>所以    <img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image219.png" alt="img"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image221.png" alt="img"></p>
+<p>所以 </p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image223.png" alt="img"></p>
+<hr>
+<ul>
+<li><strong>教材4.11题（Page386）如图所示是Newton环的干涉装置，平凸透镜球面的曲率半径<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image002-1590503998740.png" alt="img">，折射率<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image004.png" alt="img">，平板玻璃由左右两部分组成，折射率分别是<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image006.png" alt="img">和<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image008.png" alt="img">，平凸透镜的顶点在这两部分玻璃的分界处，中间充以折射率<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image010-1590504096431.png" alt="img">的二硫化碳液体，若用单色光垂直照射，在反射光中测得右边j级明条纹的半径<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image012.png" alt="img">，j＋5级明条纹的半径<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image014.png" alt="img">，试求：（1）入射光的波长；（2）观察到的干涉图样。</strong></li>
+</ul>
+<p>   <img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image016.jpg" alt="未命名"></p>
+<p>   解：左边有半波损失，右边没有。</p>
+<p>   （1）<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image018-1590503998741.png" alt="img">，<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image020.png" alt="img">，可得</p>
+<p>   <img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image022-1590503998741.png" alt="img"></p>
+<p>   （2）左边亮条纹<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image024-1590503998741.png" alt="img">，暗条纹<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image018.png" alt="img">，即同一高度处，两侧条纹正好明暗错开。</p>
+<hr>
+<p> <strong>教材4.22题（Page388）设Fabry-Poret腔（F-P腔）长5cm，用扩展光源做实验，光波波长λ=6000Å，问：（1）中心干涉级数是多少？（2）在倾角为10附近，干涉环的半角宽度是多少？（设反射率R=0.98）。（3）如果用该F-P腔分辨谱线，其色分辨本领有多大？可分辨的最小波长间隔是多少？（4）如果用其对白光进行选频，透射最强的谱线有几条？每条的谱线宽度是多少？（5）由于热胀冷缩所引起的腔长的改变量为10-5（相对值），则谱线的漂移量是多少？</strong></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529215326301.png" alt="image-20200529215326301"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529215354188.png" alt="image-20200529215354188"></p>
+<h1 id="10、衍射光栅"><a href="#10、衍射光栅" class="headerlink" title="10、衍射光栅"></a>10、衍射光栅</h1><h2 id="10-1、干涉与衍射的区别"><a href="#10-1、干涉与衍射的区别" class="headerlink" title="10.1、干涉与衍射的区别"></a>10.1、干涉与衍射的区别</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526194623998.png" alt="image-20200526194623998"></p>
+<h2 id="10-2、衍射光栅"><a href="#10-2、衍射光栅" class="headerlink" title="10.2、衍射光栅"></a>10.2、衍射光栅</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526195017900.png" alt="image-20200526195017900"></p>
+<h2 id="10-3、干涉因子"><a href="#10-3、干涉因子" class="headerlink" title="10.3、干涉因子"></a>10.3、干涉因子</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526195247484.png" alt="image-20200526195247484"></p>
+<h2 id="10-4、衍射因子"><a href="#10-4、衍射因子" class="headerlink" title="10.4、衍射因子"></a>10.4、衍射因子</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526195715484.png" alt="image-20200526195715484"></p>
+<h2 id="10-5、复振幅和光强"><a href="#10-5、复振幅和光强" class="headerlink" title="10.5、复振幅和光强"></a>10.5、复振幅和光强</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526195321922.png" alt="image-20200526195321922"></p>
+<h2 id="10-6、光栅衍射的强度"><a href="#10-6、光栅衍射的强度" class="headerlink" title="10.6、光栅衍射的强度"></a>10.6、光栅衍射的强度</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526195527457.png" alt="image-20200526195527457"></p>
+<h2 id="10-7、极大值与极小值"><a href="#10-7、极大值与极小值" class="headerlink" title="10.7、极大值与极小值"></a>10.7、极大值与极小值</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526195755107.png" alt="image-20200526195755107"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526195836338.png" alt="image-20200526195836338"></p>
+<h2 id="10-8、缺级"><a href="#10-8、缺级" class="headerlink" title="10.8、缺级"></a>10.8、缺级</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526195901400.png" alt="image-20200526195901400"></p>
+<h2 id="10-9、小结"><a href="#10-9、小结" class="headerlink" title="10.9、小结"></a>10.9、小结</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526200658117.png" alt="image-20200526200658117"></p>
+<h2 id="10-10、作业"><a href="#10-10、作业" class="headerlink" title="10.10、作业"></a>10.10、作业</h2><ul>
+<li><strong>教材5.5题（Page389）</strong> <strong>已知光栅缝宽为1.5×10-4cm，波长为600nm的单色光垂直入射，发现第4级缺级，透镜焦距为1m，试求：（1）屏幕上第2级亮条纹与第3级亮条纹的距离；(2)幕上所呈现的全部亮条纹数。</strong></li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529215439407.png" alt="image-20200529215439407"></p>
+<hr>
+<ul>
+<li><strong>教材5.8题（Page390）为了能分辨第二级钠光谱的双线（波长分别为589.0nm和589.6nm），宽度为10cm的平面光栅的常数是多少？</strong></li>
+</ul>
+<p>解：<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image282.png" alt="img">，<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image284.png" alt="img">，</p>
+<p>光栅宽度<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image286.png" alt="img"></p>
+<hr>
+<ul>
+<li><strong>教材5.12题（Page391）一光栅宽5cm，每毫米有400条刻线。波长为500nm的平行光正入射时，光栅的第4级衍射光谱在单缝衍射的第一极小值位置。试求：（1）每缝的宽度；（2）第二级衍射谱的半角宽度；（3）第二级可分辨的最小波长差；（4）如果入射光的入射方向与光栅平面的法线成30角，光栅能分辨的最小波长差又是多少？</strong></li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529215511568.png" alt="image-20200529215511568"></p>
+<hr>
+<p>补充题：</p>
+<p><strong>三条平行狭缝，宽为a，缝距分别为d和2d，利用振幅矢量法求解正入射时夫琅禾费衍射的光强分布，能用式子表示出来即可，不需要化简。（需画出振幅矢量图，图占5分）</strong></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image302.png" alt="img"></p>
+<p>答案参见课本Page226例题5.1</p>
+<hr>
+<h1 id="第十周-期中考"><a href="#第十周-期中考" class="headerlink" title="第十周 期中考"></a>第十周 期中考</h1><p><strong>中央明纹的角宽度=2θ≈2λ/a</strong></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529215602905.png" alt="image-20200529215602905"></p>
+<hr>
+<h1 id="11、偏振光"><a href="#11、偏振光" class="headerlink" title="11、偏振光"></a>11、偏振光</h1><h2 id="11-1、偏振特性"><a href="#11-1、偏振特性" class="headerlink" title="11.1、偏振特性"></a>11.1、偏振特性</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526190007960.png" alt="image-20200526190007960"></p>
+<h2 id="11-2、起偏和检偏"><a href="#11-2、起偏和检偏" class="headerlink" title="11.2、起偏和检偏"></a>11.2、起偏和检偏</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526190122215.png" alt="image-20200526190122215"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526190145863.png" alt="image-20200526190145863"></p>
+<h2 id="11-3、平面偏振光（线偏振光）"><a href="#11-3、平面偏振光（线偏振光）" class="headerlink" title="11.3、平面偏振光（线偏振光）"></a>11.3、平面偏振光（线偏振光）</h2><ol>
+<li>==光矢量只在一个固定的平面内振动。==</li>
+<li>==可分解为两列正交平面偏振光。==</li>
+</ol>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526191847940.png" alt="image-20200526191847940"></p>
+<ul>
+<li>==同相与反相==</li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526191918013.png" alt="image-20200526191918013"></p>
+<h3 id="1、滞后"><a href="#1、滞后" class="headerlink" title="1、滞后"></a>1、滞后</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526192021516.png" alt="image-20200526192021516"></p>
+<h2 id="11-4、部分偏振光"><a href="#11-4、部分偏振光" class="headerlink" title="11.4、部分偏振光"></a>11.4、部分偏振光</h2><h3 id="1、概念-2"><a href="#1、概念-2" class="headerlink" title="1、概念"></a>1、概念</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526192202086.png" alt="image-20200526192202086"></p>
+<h2 id="11-5、圆偏振光"><a href="#11-5、圆偏振光" class="headerlink" title="11.5、圆偏振光"></a>11.5、圆偏振光</h2><h3 id="1、概念-3"><a href="#1、概念-3" class="headerlink" title="1、概念"></a>1、概念</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526192257264.png" alt="image-20200526192257264"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526192309396.png" alt="image-20200526192309396"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526192332773.png" alt="image-20200526192332773"></p>
+<h3 id="2、左旋、右旋"><a href="#2、左旋、右旋" class="headerlink" title="2、左旋、右旋"></a>2、左旋、右旋</h3><ol>
+<li>==当w为负值时，相位差为正 –&gt; 滞后 –&gt; 左旋==</li>
+<li>==当w为正值时，相位差为正 –&gt; 超前 –&gt; 右旋==</li>
+</ol>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526192426724.png" alt="image-20200526192426724"></p>
+<h2 id="11-6、椭圆偏振光"><a href="#11-6、椭圆偏振光" class="headerlink" title="11.6、椭圆偏振光"></a>11.6、椭圆偏振光</h2><h3 id="1、概念-4"><a href="#1、概念-4" class="headerlink" title="1、概念"></a>1、概念</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526192708878.png" alt="image-20200526192708878"></p>
+<h3 id="2、左右旋"><a href="#2、左右旋" class="headerlink" title="2、左右旋"></a>2、左右旋</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526192944546.png" alt="image-20200526192944546"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526193032847.png" alt="image-20200526193032847"></p>
+<h3 id="3、长轴位置"><a href="#3、长轴位置" class="headerlink" title="3、长轴位置"></a>3、长轴位置</h3><p>==根据相位差==</p>
+<ul>
+<li>==相位差位于左侧（二三象限）是长轴在二四象限==</li>
+<li>==相位差位于右侧（一四象限）是长轴在一三象限==</li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526193141676.png" alt="image-20200526193141676"></p>
+<h2 id="11-7、相位差的影响"><a href="#11-7、相位差的影响" class="headerlink" title="11.7、相位差的影响"></a>11.7、相位差的影响</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526193439361.png" alt="image-20200526193439361"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526193531643.png" alt="image-20200526193531643"></p>
+<h2 id="11-8、作业"><a href="#11-8、作业" class="headerlink" title="11.8、作业"></a>11.8、作业</h2><ul>
+<li><strong>教材7.4题（Page394）假定在两个固定的正交理想偏振片之间插入第三个理想偏振片，且使其透振方向以角速度<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image304-1590493262545.png" alt="img">旋转，以自然光入射，并使t=0时刻新插入的偏振片的透振方向与第一个偏振片透振方向之间的夹角为0，试证明投射的光强满足如下关系式</strong><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image002-1590760603020.png" alt="img">。</li>
+</ul>
+<p>解：</p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image308-1590493262546.jpg" alt="未命名"></p>
+<p>从P2透射的光强<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image310-1590493262546.png" alt="img"></p>
+<hr>
+<ul>
+<li><strong>教材7.7题（Page394）起偏器和检偏器透振方向间夹角是<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image312-1590493262546.png" alt="img">，（1）如果没有吸收，透射光强变为原来的多少？（2）如果它们各吸收了10%的光强，透射光强又变为原来的多少？</strong></li>
+</ul>
+<p>解：（1）<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image314-1590493262547.png" alt="img"></p>
+<p>（2）考虑吸收<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image316-1590493262547.png" alt="img"></p>
+<p>从P2透射的光强<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image318-1590493262547.png" alt="img"></p>
+<hr>
+<ul>
+<li>**当一束自然光以布儒斯特角i0入射到两种介质的分界面(垂直于纸面)上时，画出图中反射光和折射光的光矢量振动方向。  <img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image320-1590493262547.png" alt="img">  **</li>
+</ul>
+<p>答案：见图</p>
+<p>  <img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image322-1590493262547.png" alt="img">  </p>
+<hr>
+<ul>
+<li><strong>试确定下面两列光波的偏振态。</strong></li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image324-1590493262547.png" alt="img"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image326-1590493262547.png" alt="img"></p>
+<p>答案：</p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image328-1590493262547.png" alt="img"></p>
+<p>y分量比x分量的相位滞后<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image330-1590493262547.png" alt="img">，为左旋圆偏振光</p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image332-1590493262547.png" alt="img"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image334-1590493262549.png" alt="img"></p>
+<p>y分量比x分量的相位滞后<img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image330-1590493262549.png" alt="img">，为左旋圆偏振光</p>
+<hr>
+<h1 id="12、双折射"><a href="#12、双折射" class="headerlink" title="12、双折射"></a>12、双折射</h1><h2 id="12-1、双折射晶体的特征参量"><a href="#12-1、双折射晶体的特征参量" class="headerlink" title="12.1、双折射晶体的特征参量"></a>12.1、双折射晶体的特征参量</h2><pre><code>晶体的光轴：光沿此方向入射时无双折射。
+单轴晶体：光轴为对称轴，方解石晶体、石英、红宝石、冰，等等。
+双轴晶体：云母、蓝宝石、橄榄石、硫黄，等等。 </code></pre>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526184335097.png" alt="image-20200526184335097"></p>
+<h3 id="1、主截面"><a href="#1、主截面" class="headerlink" title="1、主截面"></a>1、主截面</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526184427771.png" alt="image-20200526184427771"></p>
+<h3 id="2、主平面"><a href="#2、主平面" class="headerlink" title="2、主平面"></a>2、主平面</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526184500859.png" alt="image-20200526184500859"></p>
+<h3 id="3、o光-与-e光的光强"><a href="#3、o光-与-e光的光强" class="headerlink" title="3、o光 与 e光的光强"></a>3、o光 与 e光的光强</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526184638113.png" alt="image-20200526184638113"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526184703579.png" alt="image-20200526184703579"></p>
+<h2 id="12-2、单轴晶体中的波面"><a href="#12-2、单轴晶体中的波面" class="headerlink" title="12.2、单轴晶体中的波面"></a>12.2、单轴晶体中的波面</h2><h3 id="1、o光与e光波面的区别"><a href="#1、o光与e光波面的区别" class="headerlink" title="1、o光与e光波面的区别"></a>1、o光与e光波面的区别</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526184806739.png" alt="image-20200526184806739"></p>
+<p>==除了两个特殊的方向，e光的传播方向与其波面不垂直。这是因为其波面为椭球面。<br>o光的波面是球面，故其传播方向处处与其波面垂直。==</p>
+<h2 id="12-3、正晶体、负晶体"><a href="#12-3、正晶体、负晶体" class="headerlink" title="12.3、正晶体、负晶体"></a>12.3、正晶体、负晶体</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526185021779.png" alt="image-20200526185021779"></p>
+<h2 id="12-4-、惠更斯作图法"><a href="#12-4-、惠更斯作图法" class="headerlink" title="12.4 、惠更斯作图法"></a>12.4 、惠更斯作图法</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526185104111.png" alt="image-20200526185104111"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526185217328.png" alt="image-20200526185217328"></p>
+<h2 id="12-5、作业"><a href="#12-5、作业" class="headerlink" title="12.5、作业"></a>12.5、作业</h2><ul>
+<li><strong>教材7.17题（Page396）图中棱镜ABCD是由45方解石棱镜组成，棱镜ABD的光轴平行于AB，棱镜BCD的光轴垂直于图面。当光垂直于AB入射时，说明为什么o光和e光在第二块棱镜中分开，并在图中画出它们的波面和振动方向。</strong></li>
+</ul>
+<p>解：</p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image336.jpg" alt="未命名"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200529215757363.png" alt="image-20200529215757363"></p>
+<hr>
+<ul>
+<li><strong>如图所示，一束光入射至正晶体，利用惠更斯作图法作图得到o光和e光的传播方向，并标出o光和e光的振动方向。</strong></li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image344.png" alt="http://edu-image.nosdn.127.net/85A0FD164574D45AD8CFBFD6E37C390A.png?imageView&amp;thumbnail=890x0&amp;quality=100"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image346.png" alt="img"></p>
+<hr>
+<ul>
+<li><strong>线偏振光垂直入射到一块光轴平行于表面的方解石波片上，光的振动面和波片的主截面</strong></li>
+</ul>
+<p><strong>成30角。求：（1）透射出来的寻常光和非常光的相对强度为多少？（2）用钠光入射时如</strong></p>
+<p><strong>要产生90</strong> <strong>的相位差，波片的最小厚度应为多少？（λ=589nm）</strong></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image348.png" alt="img"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/clip_image350.png" alt="img"></p>
+<hr>
+<h1 id="13、1-2波片和1-4波片"><a href="#13、1-2波片和1-4波片" class="headerlink" title="13、1/2波片和1/4波片"></a>13、1/2波片和1/4波片</h1><h2 id="13-1、光在波晶体中的改变"><a href="#13-1、光在波晶体中的改变" class="headerlink" title="13.1、光在波晶体中的改变"></a>13.1、光在波晶体中的改变</h2><ul>
+<li><h4 id="1-4波片产生-Π-2的光程差"><a href="#1-4波片产生-Π-2的光程差" class="headerlink" title="1/4波片产生 Π/2的光程差"></a><strong>1/4波片产生 Π/2的光程差</strong></h4></li>
+<li><h4 id="1-2波片-产生-Π的光程差"><a href="#1-2波片-产生-Π的光程差" class="headerlink" title="1/2波片 产生 Π的光程差"></a><strong>1/2波片 产生 Π的光程差</strong></h4></li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526160449390.png" alt="image-20200526160449390"></p>
+<ul>
+<li>==光程差由两个折射光的折射率所决定==</li>
+</ul>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526152813568.png" alt="image-20200526152813568"></p>
+<h2 id="13-2、平面偏振光（线偏振光）"><a href="#13-2、平面偏振光（线偏振光）" class="headerlink" title="13.2、平面偏振光（线偏振光）"></a>13.2、平面偏振光（线偏振光）</h2><h3 id="1、1-4波片"><a href="#1、1-4波片" class="headerlink" title="1、1/4波片"></a>1、1/4波片</h3><ol>
+<li>==线偏振光变为左旋/右旋 椭圆偏振光==</li>
+</ol>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526152945992.png" alt="image-20200526152945992"></p>
+<p>==当电矢量与光轴夹角为45度时，产生圆偏振光==</p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526153117393.png" alt="image-20200526153117393"></p>
+<h3 id="2、1-2波片"><a href="#2、1-2波片" class="headerlink" title="2、1/2波片"></a>2、1/2波片</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526153252030.png" alt="image-20200526153252030"></p>
+<h3 id="3、小结"><a href="#3、小结" class="headerlink" title="3、小结"></a>3、小结</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526153317764.png" alt="image-20200526153317764"></p>
+<h2 id="13-3、圆偏振光"><a href="#13-3、圆偏振光" class="headerlink" title="13.3、圆偏振光"></a>13.3、圆偏振光</h2><h3 id="1、1-4波片-1"><a href="#1、1-4波片-1" class="headerlink" title="1、1/4波片"></a>1、1/4波片</h3><p>==圆偏振光变为线偏振光==</p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526153352717.png" alt="image-20200526153352717"></p>
+<h3 id="2、1-2波片-1"><a href="#2、1-2波片-1" class="headerlink" title="2、1/2波片"></a>2、1/2波片</h3><p>==还是圆偏振光，但是旋转方向相反==</p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526153456995.png" alt="image-20200526153456995"></p>
+<h2 id="13-4、椭圆偏振光"><a href="#13-4、椭圆偏振光" class="headerlink" title="13.4、椭圆偏振光"></a>13.4、椭圆偏振光</h2><h3 id="1、1-4波片-2"><a href="#1、1-4波片-2" class="headerlink" title="1、1/4波片"></a>1、1/4波片</h3><p>==还是椭圆偏振光，正反向不定==</p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526153612535.png" alt="image-20200526153612535"></p>
+<h3 id="2、1-2波片-2"><a href="#2、1-2波片-2" class="headerlink" title="2、1/2波片"></a>2、1/2波片</h3><p>==反向，长轴改变==</p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526153707258.png" alt="image-20200526153707258"></p>
+<h2 id="13-5、正椭圆偏振光（椭圆长轴在轴上）"><a href="#13-5、正椭圆偏振光（椭圆长轴在轴上）" class="headerlink" title="13.5、正椭圆偏振光（椭圆长轴在轴上）"></a>13.5、正椭圆偏振光（椭圆长轴在轴上）</h2><p>==1/4波片不定，1/2波片反向==</p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526153816226.png" alt="image-20200526153816226"></p>
+<h2 id="13-6、偏振态的鉴定"><a href="#13-6、偏振态的鉴定" class="headerlink" title="13.6、偏振态的鉴定"></a>13.6、偏振态的鉴定</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200526153921318.png" alt="image-20200526153921318"></p>
+<h2 id="13-7、光的干涉-透射光强"><a href="#13-7、光的干涉-透射光强" class="headerlink" title="13.7、光的干涉(透射光强)"></a>13.7、光的干涉(透射光强)</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530125238568.png" alt="image-20200530125238568"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200530125247393.png" alt="image-20200530125247393"></p>
+<hr>
+<h2 id="13-8、作业"><a href="#13-8、作业" class="headerlink" title="13.8、作业"></a>13.8、作业</h2><ul>
+<li><p><strong>【教材7.19题（Page396）】用什么方法区分1/4片和1/2片？</strong></p>
+<p>解：让圆偏光通过波片，再用偏振片检验。由于1/4波片使圆偏光变为线偏光，再通过偏振片时，会出现消光。而经过1/2波片的圆偏光还是圆偏光，用检偏器检验，不会消光。也可以用椭圆偏振光检验，但需要转动1/4波片，达到消光。</p>
+<hr>
+</li>
+</ul>
+<ul>
+<li><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/94DD089E312EF676F8CD8F040868B756.png" alt="img"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/38F9E6851D3A716925C3D6007A733318.png" alt="img"></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/7F92371317D0DB4D29F9EDBE1AC15A02.png" alt="img"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/2DB7266C5FCCEFD65682D962FBCB6D7E.png" alt="img"></p>
+</li>
+</ul>
+<h1 id="14、光的吸收、散射、色散-第9章"><a href="#14、光的吸收、散射、色散-第9章" class="headerlink" title="14、光的吸收、散射、色散(第9章)"></a>14、光的吸收、散射、色散(第9章)</h1><h2 id="14-1、光的吸收"><a href="#14-1、光的吸收" class="headerlink" title="14.1、光的吸收"></a>14.1、光的吸收</h2><h3 id="1、线性吸收规律"><a href="#1、线性吸收规律" class="headerlink" title="1、线性吸收规律"></a>1、线性吸收规律</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200602145103489.png" alt="image-20200602145103489"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200602145214263.png" alt="image-20200602145214263"></p>
+<h2 id="14-2、普遍吸收"><a href="#14-2、普遍吸收" class="headerlink" title="14.2、普遍吸收"></a>14.2、普遍吸收</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200602145258161.png" alt="image-20200602145258161"></p>
+<h2 id="14-3、选择吸收"><a href="#14-3、选择吸收" class="headerlink" title="14.3、选择吸收"></a>14.3、选择吸收</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200602145326730.png" alt="image-20200602145326730"></p>
+<h2 id="14-4、红外窗口"><a href="#14-4、红外窗口" class="headerlink" title="14.4、红外窗口"></a>14.4、红外窗口</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200602145356730.png" alt="image-20200602145356730"></p>
+<h2 id="14-5、光的色散"><a href="#14-5、光的色散" class="headerlink" title="14.5、光的色散"></a>14.5、光的色散</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200602145450177.png" alt="image-20200602145450177"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200602145513753.png" alt="image-20200602145513753"></p>
+<h2 id="14-6、色散公式"><a href="#14-6、色散公式" class="headerlink" title="14.6、色散公式"></a>14.6、色散公式</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200602145540777.png" alt="image-20200602145540777"></p>
+<h2 id="14-7、电偶极子"><a href="#14-7、电偶极子" class="headerlink" title="14.7、电偶极子"></a>14.7、电偶极子</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200602145634898.png" alt="image-20200602145634898"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200602145655730.png" alt="image-20200602145655730"></p>
+<h3 id="1、折射率"><a href="#1、折射率" class="headerlink" title="1、折射率"></a>1、折射率</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200602145748559.png" alt="image-20200602145748559"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200602145833034.png" alt="image-20200602145833034"></p>
+<h2 id="14-8、光的散射"><a href="#14-8、光的散射" class="headerlink" title="14.8、光的散射"></a>14.8、光的散射</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200602145916015.png" alt="image-20200602145916015"></p>
+<h3 id="1、散射的分类"><a href="#1、散射的分类" class="headerlink" title="1、散射的分类"></a>1、散射的分类</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200602150000945.png" alt="image-20200602150000945"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200602150032498.png" alt="image-20200602150032498"></p>
+<h2 id="14-9、天空的颜色"><a href="#14-9、天空的颜色" class="headerlink" title="14.9、天空的颜色"></a>14.9、天空的颜色</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200602150122660.png" alt="image-20200602150122660"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200602150142389.png" alt="image-20200602150142389"></p>
+<h2 id="14-10、倍频晶体与二次谐波装置"><a href="#14-10、倍频晶体与二次谐波装置" class="headerlink" title="14.10、倍频晶体与二次谐波装置"></a>14.10、倍频晶体与二次谐波装置</h2><p>​    <img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200602150222681.png" alt="image-20200602150222681"></p>
+<h1 id="15、相对论与辐射"><a href="#15、相对论与辐射" class="headerlink" title="15、相对论与辐射"></a>15、相对论与辐射</h1><h2 id="15-1、相对论和量子力学的兴起"><a href="#15-1、相对论和量子力学的兴起" class="headerlink" title="15.1、相对论和量子力学的兴起"></a>15.1、相对论和量子力学的兴起</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200609150159915.png" alt="image-20200609150159915"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200609150222575.png" alt="image-20200609150222575"></p>
+<h2 id="15-2、黑体辐射"><a href="#15-2、黑体辐射" class="headerlink" title="15.2、黑体辐射"></a>15.2、黑体辐射</h2><h3 id="1、热辐射（温度）"><a href="#1、热辐射（温度）" class="headerlink" title="1、热辐射（温度）"></a>1、热辐射（温度）</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200609150319329.png" alt="image-20200609150319329"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200609152659025.png" alt="image-20200609152659025"></p>
+<h3 id="2、黑体"><a href="#2、黑体" class="headerlink" title="2、黑体"></a>2、黑体</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200609150356628.png" alt="image-20200609150356628"></p>
+<h2 id="15-3、基尔霍夫定律"><a href="#15-3、基尔霍夫定律" class="headerlink" title="15.3、基尔霍夫定律"></a>15.3、基尔霍夫定律</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200609150618398.png" alt="image-20200609150618398"></p>
+<h2 id="15-4、普朗克常数"><a href="#15-4、普朗克常数" class="headerlink" title="15.4、普朗克常数"></a>15.4、普朗克常数</h2><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200609150701134.png" alt="image-20200609150701134"></p>
+<h2 id="15-5、光电效应"><a href="#15-5、光电效应" class="headerlink" title="15.5、光电效应"></a>15.5、光电效应</h2><h3 id="1、产生条件"><a href="#1、产生条件" class="headerlink" title="1、产生条件"></a>1、产生条件</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200609151004824.png" alt="image-20200609151004824"></p>
+<h3 id="2、饱和电流与遏止电压"><a href="#2、饱和电流与遏止电压" class="headerlink" title="2、饱和电流与遏止电压"></a>2、饱和电流与遏止电压</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200609151253764.png" alt="image-20200609151253764"></p>
+<h3 id="3、光电效应特点"><a href="#3、光电效应特点" class="headerlink" title="3、光电效应特点"></a>3、光电效应特点</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200609151331414.png" alt="image-20200609151331414"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200609151439722.png" alt="image-20200609151439722"></p>
+<h3 id="4、光电效应方程"><a href="#4、光电效应方程" class="headerlink" title="4、光电效应方程"></a>4、光电效应方程</h3><p>爱因斯坦靠“光电效应方程”获得诺贝尔奖，而不是相对论。</p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200609151804366.png" alt="image-20200609151804366"></p>
+<h2 id="15-6、光子"><a href="#15-6、光子" class="headerlink" title="15.6、光子"></a>15.6、光子</h2><h3 id="1、公式"><a href="#1、公式" class="headerlink" title="1、公式"></a>1、公式</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200609152022926.png" alt="image-20200609152022926"></p>
+<h3 id="2、单位转换关系"><a href="#2、单位转换关系" class="headerlink" title="2、单位转换关系"></a>2、单位转换关系</h3><ul>
+<li><p>焦耳与电子伏特</p>
+<p><strong>电子伏特与SI制的能量单位<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E7%84%A6%E8%80%B3/5489626">焦耳</a>（J）的换算关系是1 eV = 1.6021766208(98)×10^-19 J</strong></p>
+</li>
+</ul>
+<h3 id="3、光子到底是波还是粒子？"><a href="#3、光子到底是波还是粒子？" class="headerlink" title="3、光子到底是波还是粒子？"></a>3、光子到底是波还是粒子？</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200609152153870.png" alt="image-20200609152153870"></p>
+<h3 id="4、说明光具有量子性的实验（三个）"><a href="#4、说明光具有量子性的实验（三个）" class="headerlink" title="4、说明光具有量子性的实验（三个）"></a>4、说明光具有量子性的实验（三个）</h3><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200609155331815.png" alt="image-20200609155331815"></p>
+<h2 id="15-7、作业"><a href="#15-7、作业" class="headerlink" title="15.7、作业"></a>15.7、作业</h2><ul>
+<li><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200613201059018.png" alt="image-20200613201059018"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200613201124708.png" alt="image-20200613201124708"></p>
+<hr>
+</li>
+</ul>
+<ul>
+<li><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200613201139364.png" alt="image-20200613201139364"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200613201149301.png" alt="image-20200613201149301"></p>
+<hr>
+</li>
+</ul>
+<ul>
+<li><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200613201200333.png" alt="image-20200613201200333"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200613201209325.png" alt="image-20200613201209325"></p>
+<hr>
+</li>
+</ul>
+<ul>
+<li><p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/image-20200613201219029.png" alt="image-20200613201219029"></p>
+<p><img src="/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/.%5C%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6.assets%5Cimage-20200613201237415.png" alt="image-20200613201237415"></p>
+</li>
+</ul>
+
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">晓江</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://lxjblog.gitee.io/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/">https://lxjblog.gitee.io/2020/08/02/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">晓江</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E8%AF%BE%E5%86%85/">
+                                    <span class="chip bg-color">课内</span>
+                                </a>
+                            
+                                <a href="/tags/%E7%89%A9%E7%90%86%E5%85%89%E5%AD%A6/">
+                                    <span class="chip bg-color">物理光学</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2020/08/02/%E6%95%B0%E7%94%B5/">
+                    <div class="card-image">
+                        
+                        <img src="/2020/08/02/%E6%95%B0%E7%94%B5/image-20200802232017897.png" class="responsive-img" alt="数字电子技术">
+                        
+                        <span class="card-title">数字电子技术</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            光电信息课程之一，多图慎入~
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-08-02
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%85%89%E7%94%B5%E8%AF%BE%E7%A8%8B/" class="post-category">
+                                    光电课程
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%AF%BE%E5%86%85/">
+                        <span class="chip bg-color">课内</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%94%B5%E8%B7%AF/">
+                        <span class="chip bg-color">电路</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/08/02/%E5%9B%9B%E7%BA%A7%E8%80%83%E8%AF%95/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="四级单词">
+                        
+                        <span class="card-title">四级单词</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            四级考试单词，持续更新中~
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-02
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%80%83%E8%AF%95/" class="post-category">
+                                    考试
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%9B%9B%E7%BA%A7/">
+                        <span class="chip bg-color">四级</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">学习</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="album"
+                   id="2681139"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2020</span>
+            <a href="/about" target="_blank">晓江</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/lxjnote" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1256240778@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1256240778" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1256240778" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
