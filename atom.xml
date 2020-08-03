@@ -3,7 +3,7 @@
   <title>MyBlog</title>
   
   <subtitle>我的博客</subtitle>
-  <link href="/blog/atom.xml" rel="self"/>
+  <link href="/atom.xml" rel="self"/>
   
   <link href="https://lxjblog.gitee.io/blog/"/>
   <updated>2020-08-03T03:16:39.487Z</updated>
