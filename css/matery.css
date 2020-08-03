@@ -120,6 +120,7 @@ pre {
     overflow: auto;
     border-radius: 0.35rem;
     tab-size: 4;
+	color: wheat;
 }
 
 .code-area::after {
@@ -602,7 +603,7 @@ header .go-back i {
 }
 
 .bg-cover .title {
-    font-size: 4rem;
+    /* font-size: 4rem; */
     line-height: 1.85em;
     margin-bottom: 20px;
     position: relative;
