@@ -214,9 +214,9 @@
       <category term="微服务" scheme="https://lxjblog.gitee.io/blog/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
     
     
-      <category term="springBoot" scheme="https://lxjblog.gitee.io/blog/tags/springBoot/"/>
-    
       <category term="java" scheme="https://lxjblog.gitee.io/blog/tags/java/"/>
+    
+      <category term="springBoot" scheme="https://lxjblog.gitee.io/blog/tags/springBoot/"/>
     
   </entry>
   
@@ -243,9 +243,9 @@
       <category term="微服务" scheme="https://lxjblog.gitee.io/blog/categories/%E5%BE%AE%E6%9C%8D%E5%8A%A1/"/>
     
     
-      <category term="java" scheme="https://lxjblog.gitee.io/blog/tags/java/"/>
-    
       <category term="springcloud" scheme="https://lxjblog.gitee.io/blog/tags/springcloud/"/>
+    
+      <category term="java" scheme="https://lxjblog.gitee.io/blog/tags/java/"/>
     
   </entry>
   
