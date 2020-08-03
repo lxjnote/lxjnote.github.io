@@ -464,7 +464,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Swagger"><a href="#Swagger" class="headerlink" title="Swagger"></a>Swagger</h2><h2 id="1、Swagger简介"><a href="#1、Swagger简介" class="headerlink" title="1、Swagger简介"></a>1、Swagger简介</h2><p><img src="/2020/08/02/swagger/image-20200802225518860.png" alt="image-20200802225518860"></p>
+                <h2 id="Swagger"><a href="#Swagger" class="headerlink" title="Swagger"></a>Swagger</h2><h2 id="1、Swagger简介"><a href="#1、Swagger简介" class="headerlink" title="1、Swagger简介"></a>1、Swagger简介</h2><p><img src="/blog/2020/08/02/swagger/image-20200802225518860.png" alt="image-20200802225518860"></p>
 <h3 id="1-1、前后端分离"><a href="#1-1、前后端分离" class="headerlink" title="1.1、前后端分离"></a>1.1、前后端分离</h3><p>Vue + SpringBoot</p>
 <p>后端时代：前端只管理静态页面；</p>
 <p>前后端分离时代</p>
@@ -495,7 +495,7 @@
 </blockquote>
 <p>官网：<a target="_blank" rel="noopener" href="https://swagger.io/">https://swagger.io/</a></p>
 <p>文档：<a target="_blank" rel="noopener" href="https://swagger.io/docs/open-source-tools/swagger-editor/">https://swagger.io/docs/open-source-tools/swagger-editor/</a></p>
-<p><img src="/2020/08/02/swagger/image-20200727110051606.png" alt="image-20200727110051606"></p>
+<p><img src="/blog/2020/08/02/swagger/image-20200727110051606.png" alt="image-20200727110051606"></p>
 <h2 id="2、Swagger的使用"><a href="#2、Swagger的使用" class="headerlink" title="2、Swagger的使用"></a>2、Swagger的使用</h2><blockquote>
 <p>在项目中使用swagger需要Springfox</p>
 </blockquote>
@@ -512,13 +512,13 @@
 <li><p>编写控制类<code>MyController</code>，进行环境测试</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyController</span> </span>&#123;</span><br><span class="line">    <span class="meta">@RequestMapping(&quot;/hello&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">hello</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;hello swagger!&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2020/08/02/swagger/image-20200727124120007.png" alt="image-20200727124120007"></p>
+<p><img src="/blog/2020/08/02/swagger/image-20200727124120007.png" alt="image-20200727124120007"></p>
 </li>
 <li><p>配置Swagger ==&gt; 编写配置类<code>SwaggerConfig</code></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span> <span class="comment">//配置类</span></span><br><span class="line"><span class="meta">@EnableSwagger2</span><span class="comment">// 开启Swagger2的自动配置</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SwaggerConfig</span> </span>&#123;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>测试运行，访问<a target="_blank" rel="noopener" href="http://localhost:8080/swagger-ui.html%EF%BC%8C%E5%8F%AF%E4%BB%A5%E7%9C%8B%E5%88%B0swagger%E7%9A%84%E7%95%8C%E9%9D%A2%EF%BC%9B(%E5%A6%82%E6%9E%9C%E8%AE%BF%E9%97%AE%E5%87%BA%E7%8E%B0404%E9%A1%B5%E9%9D%A2%EF%BC%8C%E9%82%A3%E5%B0%B1%E9%99%8D%E4%BD%8E%E4%BE%9D%E8%B5%96%E7%89%88%E6%9C%AC)">http://localhost:8080/swagger-ui.html，可以看到swagger的界面；(如果访问出现404页面，那就降低依赖版本)</a></p>
-<p><img src="/2020/08/02/swagger/image-20200727131828697.png" alt="image-20200727131828697"></p>
+<p><img src="/blog/2020/08/02/swagger/image-20200727131828697.png" alt="image-20200727131828697"></p>
 </li>
 </ol>
 <h3 id="2-2、配置Swagger"><a href="#2-2、配置Swagger" class="headerlink" title="2.2、配置Swagger"></a>2.2、配置Swagger</h3><ol>
@@ -532,7 +532,7 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Docket <span class="title">docket</span><span class="params">()</span> </span>&#123;</span><br><span class="line">   <span class="keyword">return</span> <span class="keyword">new</span> Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>重启项目，访问测试 <a target="_blank" rel="noopener" href="http://localhost:8080/swagger-ui.html">http://localhost:8080/swagger-ui.html</a>  看下效果；</p>
-<p><img src="/2020/08/02/swagger/image-20200727132813371.png" alt="image-20200727132813371"></p>
+<p><img src="/blog/2020/08/02/swagger/image-20200727132813371.png" alt="image-20200727132813371"></p>
 </li>
 </ol>
 <h3 id="2-3、配置扫描接口及开关"><a href="#2-3、配置扫描接口及开关" class="headerlink" title="2.3、配置扫描接口及开关"></a>2.3、配置扫描接口及开关</h3><blockquote>
@@ -543,12 +543,12 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Docket <span class="title">docket</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> Docket(DocumentationType.SWAGGER_2)</span><br><span class="line">        .apiInfo(apiInfo())</span><br><span class="line">        <span class="comment">// 通过.select()方法，去配置扫描接口</span></span><br><span class="line">        .select()</span><br><span class="line">        <span class="comment">// RequestHandlerSelectors配置如何扫描接口</span></span><br><span class="line">        .apis(RequestHandlerSelectors.basePackage(<span class="string">&quot;com.xj.controller&quot;</span>))</span><br><span class="line">        .build();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>重启项目测试，由于我们配置根据包的路径扫描接口，所以我们只能看到一个类</p>
-<p><img src="/2020/08/02/swagger/image-20200727133218848.png" alt="image-20200727133218848"></p>
+<p><img src="/blog/2020/08/02/swagger/image-20200727133218848.png" alt="image-20200727133218848"></p>
 </li>
 <li><p>除了通过包路径配置扫描接口外，还可以通过配置其他方式扫描接口，这里注释一下所有的配置方式：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">any() <span class="comment">// 扫描所有，项目中的所有接口都会被扫描到</span></span><br><span class="line">none() <span class="comment">// 不扫描接口</span></span><br><span class="line"><span class="comment">// 通过方法上的注解扫描，如withMethodAnnotation(GetMapping.class)只扫描get请求</span></span><br><span class="line">withMethodAnnotation(<span class="keyword">final</span> Class&lt;? extends Annotation&gt; annotation)</span><br><span class="line"><span class="comment">// 通过类上的注解扫描，如.withClassAnnotation(Controller.class)只扫描有controller注解的类中的接口</span></span><br><span class="line">withClassAnnotation(<span class="keyword">final</span> Class&lt;? extends Annotation&gt; annotation)</span><br><span class="line">basePackage(<span class="keyword">final</span> String basePackage) <span class="comment">// 根据包路径扫描接口</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="/2020/08/02/swagger/image-20200727115430698.png" alt="image-20200727115430698"></p>
+<p><img src="/blog/2020/08/02/swagger/image-20200727115430698.png" alt="image-20200727115430698"></p>
 </li>
 <li><p>除此之外，对指定显示的内容进行再<strong>过滤</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Docket <span class="title">docket</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> Docket(DocumentationType.SWAGGER_2)</span><br><span class="line">        .apiInfo(apiInfo())</span><br><span class="line">        .select()<span class="comment">// 通过.select()方法，去配置扫描接口,RequestHandlerSelectors配置如何扫描接口</span></span><br><span class="line">        .apis(RequestHandlerSelectors.basePackage(<span class="string">&quot;com.xj.controller&quot;</span>))</span><br><span class="line">        <span class="comment">// 配置如何通过path过滤,即这里只扫描请求以/xj开头的接口</span></span><br><span class="line">        .paths(PathSelectors.ant(<span class="string">&quot;/xj/**&quot;</span>))</span><br><span class="line">            <span class="comment">/* </span></span><br><span class="line"><span class="comment">               any() // 任何请求都扫描</span></span><br><span class="line"><span class="comment">            none() // 任何请求都不扫描</span></span><br><span class="line"><span class="comment">            regex(final String pathRegex) // 通过正则表达式控制</span></span><br><span class="line"><span class="comment">            ant(final String antPattern) // 通过ant()控制</span></span><br><span class="line"><span class="comment">           */</span></span><br><span class="line">        .build();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -580,7 +580,7 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Docket <span class="title">docket</span><span class="params">(Environment environment)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 设置要显示swagger的环境</span></span><br><span class="line">    Profiles profiles = Profiles.of(<span class="string">&quot;dev&quot;</span>, <span class="string">&quot;test&quot;</span>);</span><br><span class="line">    <span class="comment">// 判断当前是否处于该环境</span></span><br><span class="line">    <span class="comment">// 通过 enable() 接收此参数判断是否要显示</span></span><br><span class="line">    <span class="keyword">boolean</span> flag = environment.acceptsProfiles(profiles);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> Docket(DocumentationType.SWAGGER_2)</span><br><span class="line">        .apiInfo(apiInfo())</span><br><span class="line">        .enable(flag) <span class="comment">//配置是否启用Swagger，如果是false，在浏览器将无法访问</span></span><br><span class="line">        .select()<span class="comment">// 通过.select()方法，去配置扫描接口,RequestHandlerSelectors配置如何扫描接口</span></span><br><span class="line">        .apis(RequestHandlerSelectors.basePackage(<span class="string">&quot;com.xj.controller&quot;</span>))</span><br><span class="line">        <span class="comment">// 配置如何通过path过滤,即这里只扫描请求以/xj开头的接口</span></span><br><span class="line">        .paths(PathSelectors.ant(<span class="string">&quot;/xj/**&quot;</span>))</span><br><span class="line">        .build();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>测试的时候注意修改地址的端口号，如设置了默认dev就需要变为8081</p>
-<p><img src="/2020/08/02/swagger/image-20200727134554985.png" alt="image-20200727134554985"></p>
+<p><img src="/blog/2020/08/02/swagger/image-20200727134554985.png" alt="image-20200727134554985"></p>
 </li>
 </ol>
 <h3 id="2-4、配置API分组"><a href="#2-4、配置API分组" class="headerlink" title="2.4、配置API分组"></a>2.4、配置API分组</h3><ol>
@@ -588,13 +588,13 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Docket <span class="title">docket</span><span class="params">(Environment environment)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo())</span><br><span class="line">        .groupName(<span class="string">&quot;晓江&quot;</span>) <span class="comment">// 配置分组</span></span><br><span class="line">        <span class="comment">// 省略配置....</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>重启项目查看分组</p>
-<p><img src="/2020/08/02/swagger/image-20200727134808228.png" alt="image-20200727134808228"></p>
+<p><img src="/blog/2020/08/02/swagger/image-20200727134808228.png" alt="image-20200727134808228"></p>
 </li>
 <li><p>如何配置多个分组？配置多个分组只需要配置多个docket即可：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Docket <span class="title">docket1</span><span class="params">()</span></span>&#123;</span><br><span class="line">   <span class="keyword">return</span> <span class="keyword">new</span> Docket(DocumentationType.SWAGGER_2).groupName(<span class="string">&quot;group1&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Docket <span class="title">docket2</span><span class="params">()</span></span>&#123;</span><br><span class="line">   <span class="keyword">return</span> <span class="keyword">new</span> Docket(DocumentationType.SWAGGER_2).groupName(<span class="string">&quot;group2&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">@Bean</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Docket <span class="title">docket3</span><span class="params">()</span></span>&#123;</span><br><span class="line">   <span class="keyword">return</span> <span class="keyword">new</span> Docket(DocumentationType.SWAGGER_2).groupName(<span class="string">&quot;group3&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>重启项目查看即可</p>
-<p><img src="/2020/08/02/swagger/image-20200727135004239.png" alt="image-20200727135004239"></p>
+<p><img src="/blog/2020/08/02/swagger/image-20200727135004239.png" alt="image-20200727135004239"></p>
 </li>
 </ol>
 <h3 id="2-5、实体配置"><a href="#2-5、实体配置" class="headerlink" title="2.5、实体配置"></a>2.5、实体配置</h3><blockquote>
@@ -610,7 +610,7 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping(&quot;/getUser&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> User <span class="title">getUser</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> User();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>重启查看测试，注意切换到我们配置的组内</p>
-<p><img src="/2020/08/02/swagger/image-20200727135228045.png" alt="image-20200727135228045"></p>
+<p><img src="/blog/2020/08/02/swagger/image-20200727135228045.png" alt="image-20200727135228045"></p>
 </li>
 </ol>
 <h3 id="2-6、常用注解"><a href="#2-6、常用注解" class="headerlink" title="2.6、常用注解"></a>2.6、常用注解</h3><p>Swagger的所有注解定义在io.swagger.annotations包下</p>
@@ -646,30 +646,30 @@
 <p>在控制类中进行修饰，都是修饰方法的</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@ApiOperation(&quot;获取用户名&quot;)</span></span><br><span class="line"><span class="meta">@GetMapping(&quot;/user/&#123;username&#125;&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">getUsername</span><span class="params">(<span class="meta">@PathVariable(&quot;username&quot;)</span> <span class="meta">@ApiParam(&quot;用户名&quot;)</span> String username)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> username;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2020/08/02/swagger/image-20200727141921819.png" alt="image-20200727141921819"></p>
-<p><img src="/2020/08/02/swagger/image-20200727143606867.png" alt="image-20200727143606867"></p>
+<p><img src="/blog/2020/08/02/swagger/image-20200727141921819.png" alt="image-20200727141921819"></p>
+<p><img src="/blog/2020/08/02/swagger/image-20200727143606867.png" alt="image-20200727143606867"></p>
 <p>这样的话，可以给一些比较难理解的属性或者接口，增加一些配置信息，让人更容易阅读和测试！</p>
 <h3 id="2-7、拓展：其他皮肤"><a href="#2-7、拓展：其他皮肤" class="headerlink" title="2.7、拓展：其他皮肤"></a>2.7、拓展：其他皮肤</h3><p>我们可以导入不同的包实现不同的皮肤定义：如果修改了端口号记得访问<strong>对应端口</strong>，里面的配置信息还是一致。</p>
 <ol>
 <li><p>默认的  <strong>访问 <a target="_blank" rel="noopener" href="http://localhost:8080/swagger-ui.html">http://localhost:8080/swagger-ui.html</a></strong></p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span> </span><br><span class="line">   <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>io.springfox<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>springfox-swagger-ui<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.9.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="/2020/08/02/swagger/image-20200727144645271.png" alt="image-20200727144645271"></p>
+<p><img src="/blog/2020/08/02/swagger/image-20200727144645271.png" alt="image-20200727144645271"></p>
 </li>
 <li><p>bootstrap-ui  <strong>访问 <a target="_blank" rel="noopener" href="http://localhost:8080/doc.html">http://localhost:8080/doc.html</a></strong></p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 引入swagger-bootstrap-ui包 /doc.html--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.github.xiaoymin<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>swagger-bootstrap-ui<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.9.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="/2020/08/02/swagger/image-20200727144547432.png" alt="image-20200727144547432"></p>
+<p><img src="/blog/2020/08/02/swagger/image-20200727144547432.png" alt="image-20200727144547432"></p>
 </li>
 <li><p>Layui-ui  <strong>访问 <a target="_blank" rel="noopener" href="http://localhost:8080/docs.html">http://localhost:8080/docs.html</a></strong>，这个暂时访问不了</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 引入swagger-ui-layer包 /docs.html--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.github.caspar-chen<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>swagger-ui-layer<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.1.3<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="/2020/08/02/swagger/image-20200727151615208.png" alt="image-20200727151615208"></p>
+<p><img src="/blog/2020/08/02/swagger/image-20200727151615208.png" alt="image-20200727151615208"></p>
 </li>
 <li><p>mg-ui  <strong>访问 <a target="_blank" rel="noopener" href="http://localhost:8080/document.html">http://localhost:8080/document.html</a></strong></p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 引入swagger-mg-ui包 /document.html--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.zyplayer<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>swagger-mg-ui<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0.6<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="/2020/08/02/swagger/image-20200727150936383.png" alt="image-20200727150936383"></p>
+<p><img src="/blog/2020/08/02/swagger/image-20200727150936383.png" alt="image-20200727150936383"></p>
 </li>
 </ol>
 <h3 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h3><ol>
@@ -703,7 +703,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://lxjblog.gitee.io/2020/08/02/swagger/">https://lxjblog.gitee.io/2020/08/02/swagger/</a>
+                    <a href="https://lxjblog.gitee.io/blog/2020/08/02/swagger/">https://lxjblog.gitee.io/blog/2020/08/02/swagger/</a>
                 </span>
             </div>
             <div class="reprint__notice">

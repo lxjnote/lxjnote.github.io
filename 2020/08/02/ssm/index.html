@@ -520,7 +520,7 @@
 <figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">jdbc.driver</span>=<span class="string">com.mysql.jdbc.Driver</span></span><br><span class="line"><span class="meta">jdbc.url</span>=<span class="string">jdbc:mysql://localhost:3306/ssmbuild?serverTimezone=GMT&amp;createDatabaseIfNotExist=true&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;autoReconnect=true</span></span><br><span class="line"><span class="meta">jdbc.username</span>=<span class="string">root</span></span><br><span class="line"><span class="meta">jdbc.password</span>=<span class="string">1234</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>IDEA关联数据库</p>
-<p><img src="/2020/08/02/ssm/image-20200614183441037.png" alt="image-20200614183441037"></p>
+<p><img src="/blog/2020/08/02/ssm/image-20200614183441037.png" alt="image-20200614183441037"></p>
 </li>
 <li><p>编写MyBatis的核心配置文件 mybatis-config.xml</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">configuration</span></span></span><br><span class="line"><span class="meta">        <span class="meta-keyword">PUBLIC</span> <span class="meta-string">&quot;-//mybatis.org//DTD Config 3.0//EN&quot;</span></span></span><br><span class="line"><span class="meta">        <span class="meta-string">&quot;http://mybatis.org/dtd/mybatis-3-config.dtd&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--为改包下的实体类起别名--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">typeAliases</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">&quot;com.xj.pojo&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">typeAliases</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--注册映射文件--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mappers</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mapper</span> <span class="attr">resource</span>=<span class="string">&quot;com/xj/dao/BookMapper.xml&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mappers</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -640,7 +640,7 @@
 <li><p>进行优化！我们发现查询的东西不存在的时候，查出来的页面是空的，我们可以提高一下用户的体验性！</p>
 <ol>
 <li><p>在前端添加一个展示全部书籍的按钮</p>
-<p><img src="/2020/08/02/ssm/image-20200614230916789.png" alt="image-20200614230916789"></p>
+<p><img src="/blog/2020/08/02/ssm/image-20200614230916789.png" alt="image-20200614230916789"></p>
 </li>
 <li><p>并在后台增加一些判断性的代码！</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping(&quot;/queryBook&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">queryBook</span><span class="params">(String queryBookName,Model model)</span></span>&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;要查询的书籍:&quot;</span>+queryBookName);</span><br><span class="line">    <span class="comment">//如果查询的数据存在空格，则优化</span></span><br><span class="line">    Books books =</span><br><span class="line">        bookService.queryBookByName(queryBookName.trim());</span><br><span class="line">    List&lt;Books&gt; list = <span class="keyword">new</span> ArrayList&lt;Books&gt;();</span><br><span class="line">    list.add(books);</span><br><span class="line">    <span class="comment">//如果没有查出来书籍，则返回全部书籍列表</span></span><br><span class="line">    <span class="keyword">if</span> (books==<span class="keyword">null</span>)&#123;</span><br><span class="line">        list = bookService.queryAllBook();</span><br><span class="line">        model.addAttribute(<span class="string">&quot;error&quot;</span>, <span class="string">&quot;没有找到本书！&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    model.addAttribute(<span class="string">&quot;list&quot;</span>, list);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;allBook&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -656,7 +656,7 @@
 </ol>
 <p><strong>到目前为止，这个SSM项目整合已经完全的OK了，可以直接运行进行测试！这个练习十分的重要，大家</strong><br><strong>需要保证，不看任何东西，自己也可以完整的实现出来！</strong></p>
 <p><strong>项目结构图</strong>:</p>
-<p><img src="/2020/08/02/ssm/image-20200615124723387.png" alt="image-20200615124723387"></p>
+<p><img src="/blog/2020/08/02/ssm/image-20200615124723387.png" alt="image-20200615124723387"></p>
 <h2 id="报错："><a href="#报错：" class="headerlink" title="报错："></a>报错：</h2><ol>
 <li><p>无法在web.xml或使用此应用程序部署的jar文件中解析绝对uri：[<a target="_blank" rel="noopener" href="http://java.sun.com/jsp/jstl/core]">http://java.sun.com/jsp/jstl/core]</a></p>
 <p><strong>解决方法</strong>：</p>
@@ -713,7 +713,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://lxjblog.gitee.io/2020/08/02/ssm/">https://lxjblog.gitee.io/2020/08/02/ssm/</a>
+                    <a href="https://lxjblog.gitee.io/blog/2020/08/02/ssm/">https://lxjblog.gitee.io/blog/2020/08/02/ssm/</a>
                 </span>
             </div>
             <div class="reprint__notice">
